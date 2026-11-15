@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Experience comfort, elegance and exceptional hospitality at LuxuryStay Hotel. Explore our rooms and send a booking enquiry."
+    />
+    <title>LuxuryStay Hotel | Comfort & Elegance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container nav-container">
+        <a href="#home" class="logo">LUXURY<span>STAY</span></a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav" id="navMenu">
+          <a href="#home">Home</a>
+          <a href="#rooms">Our Rooms</a>
+          <a href="#about">About</a>
+          <a href="#facilities">Facilities</a>
+          <a href="#contact">Contact</a>
+          <a href="#booking" class="nav-book">Enquire Now</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">WELCOME TO LUXURYSTAY</p>
+          <h1>Experience Luxury.<br /><span>Enjoy Every Moment.</span></h1>
+          <p class="hero-description">
+            Discover exceptional comfort, elegant rooms and memorable
+            hospitality in a peaceful and welcoming environment.
+          </p>
+          <div class="hero-buttons">
+            <a href="#rooms" class="btn btn-gold">Explore Our Rooms</a>
+            <a href="#about" class="btn btn-outline">Discover More</a>
+          </div>
+        </div>
+        <div class="hero-note">
+          <span class="gold-line"></span>
+          <span>COMFORT · ELEGANCE · HOSPITALITY</span>
+        </div>
+      </section>
+
+      <!-- Introduction -->
+      <section class="welcome section-padding" id="about">
+        <div class="container welcome-grid">
+          <div class="welcome-image">
+            <img
+              src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1000&q=85"
+              alt="Elegant and comfortable hotel bedroom"
+              loading="lazy"
+            />
+            <div class="image-label">
+              <strong>Luxury</strong>
+              <span>In every detail</span>
+            </div>
+          </div>
+
+          <div class="welcome-text">
+            <p class="section-kicker">ABOUT OUR HOTEL</p>
+            <h2>A Place Where Comfort Meets <span>Elegance</span></h2>
+            <p>
+              At LuxuryStay Hotel, we believe that every stay should be special.
+              Our carefully designed spaces, welcoming atmosphere and thoughtful
+              services create an experience worth remembering.
+            </p>
+            <p>
+              Whether you are travelling for business, enjoying a holiday or
+              planning a peaceful getaway, we aim to make your stay comfortable.
+            </p>
+            <a href="#facilities" class="text-link"
+              >Discover Our Facilities <span>→</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Rooms -->
+      <section class="rooms section-padding" id="rooms">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">STAY IN COMFORT</p>
+              <h2>Explore Our <span>Rooms</span></h2>
+            </div>
+            <p>Find a room that suits your stay and your preferences.</p>
+          </div>
+
+          <div class="room-filter">
+            <input
+              type="search"
+              id="roomSearch"
+              placeholder="Search rooms..."
+              aria-label="Search rooms"
+            />
+            <select id="roomFilter" aria-label="Filter rooms by type">
+              <option value="all">All Room Types</option>
+              <option value="standard">Standard</option>
+              <option value="deluxe">Deluxe</option>
+              <option value="suite">Suite</option>
+            </select>
+          </div>
+
+          <div class="rooms-grid" id="roomsGrid">
+            <article
+              class="room-card"
+              data-type="standard"
+              data-name="standard comfort room"
+            >
+              <div class="room-image">
+                <img
+                  src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=85"
+                  alt="Standard comfort hotel room"
+                  loading="lazy"
+                />
+                <span class="room-tag">COMFORT</span>
+              </div>
+              <div class="room-info">
+                <p class="room-category">STANDARD ROOM</p>
+                <h3>Classic Comfort Room</h3>
+                <p>
+                  A welcoming room with comfortable bedding and a relaxing
+                  atmosphere.
+                </p>
+                <div class="room-details">
+                  <span>2 Guests</span>
+                  <span>Free Wi-Fi</span>
+                </div>
+                <div class="room-bottom">
+                  <p class="price">KSh 4,500 <small>/ night</small></p>
+                  <button
+                    class="btn btn-small book-room"
+                    data-room="Classic Comfort Room"
+                  >
+                    Enquire
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="room-card"
+              data-type="deluxe"
+              data-name="deluxe elegance room"
+            >
+              <div class="room-image">
+                <img
+                  src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=85"
+                  alt="Deluxe hotel bedroom"
+                  loading="lazy"
+                />
+                <span class="room-tag">POPULAR</span>
+              </div>
+              <div class="room-info">
+                <p class="room-category">DELUXE ROOM</p>
+                <h3>Deluxe Elegance Room</h3>
+                <p>
+                  Enjoy extra space, refined furnishings and a beautiful
+                  interior.
+                </p>
+                <div class="room-details">
+                  <span>2 Guests</span>
+                  <span>Air Conditioning</span>
+                </div>
+                <div class="room-bottom">
+                  <p class="price">KSh 7,000 <small>/ night</small></p>
+                  <button
+                    class="btn btn-small book-room"
+                    data-room="Deluxe Elegance Room"
+                  >
+                    Enquire
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="room-card"
+              data-type="suite"
+              data-name="presidential luxury suite"
+            >
+              <div class="room-image">
+                <img
+                  src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85"
+                  alt="Luxury hotel suite interior"
+                  loading="lazy"
+                />
+                <span class="room-tag">PREMIUM</span>
+              </div>
+              <div class="room-info">
+                <p class="room-category">LUXURY SUITE</p>
+                <h3>Presidential Suite</h3>
+                <p>
+                  A spacious suite designed for guests who appreciate extra
+                  luxury.
+                </p>
+                <div class="room-details">
+                  <span>4 Guests</span>
+                  <span>Living Area</span>
+                </div>
+                <div class="room-bottom">
+                  <p class="price">KSh 12,000 <small>/ night</small></p>
+                  <button
+                    class="btn btn-small book-room"
+                    data-room="Presidential Suite"
+                  >
+                    Enquire
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="room-card"
+              data-type="standard"
+              data-name="twin standard room"
+            >
+              <div class="room-image">
+                <img
+                  src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=900&q=85"
+                  alt="Twin hotel bedroom"
+                  loading="lazy"
+                />
+                <span class="room-tag">CLASSIC</span>
+              </div>
+              <div class="room-info">
+                <p class="room-category">STANDARD ROOM</p>
+                <h3>Twin Sharing Room</h3>
+                <p>
+                  A practical and comfortable room for friends or travelling
+                  companions.
+                </p>
+                <div class="room-details">
+                  <span>2 Guests</span>
+                  <span>Free Wi-Fi</span>
+                </div>
+                <div class="room-bottom">
+                  <p class="price">KSh 5,000 <small>/ night</small></p>
+                  <button
+                    class="btn btn-small book-room"
+                    data-room="Twin Sharing Room"
+                  >
+                    Enquire
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="room-card"
+              data-type="deluxe"
+              data-name="deluxe garden view room"
+            >
+              <div class="room-image">
+                <img
+                  src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=900&q=85"
+                  alt="Deluxe room with relaxing interior"
+                  loading="lazy"
+                />
+                <span class="room-tag">RELAX</span>
+              </div>
+              <div class="room-info">
+                <p class="room-category">DELUXE ROOM</p>
+                <h3>Garden View Room</h3>
+                <p>
+                  Relax in a beautifully styled space with a calm and refreshing
+                  feel.
+                </p>
+                <div class="room-details">
+                  <span>2 Guests</span>
+                  <span>Private Balcony</span>
+                </div>
+                <div class="room-bottom">
+                  <p class="price">KSh 8,000 <small>/ night</small></p>
+                  <button
+                    class="btn btn-small book-room"
+                    data-room="Garden View Room"
+                  >
+                    Enquire
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="room-card"
+              data-type="suite"
+              data-name="family luxury suite"
+            >
+              <div class="room-image">
+                <img
+                  src="https://images.unsplash.com/photo-1601918774946-25832a4be0d6?auto=format&fit=crop&w=900&q=85"
+                  alt="Spacious luxury family hotel room"
+                  loading="lazy"
+                />
+                <span class="room-tag">FAMILY</span>
+              </div>
+              <div class="room-info">
+                <p class="room-category">LUXURY SUITE</p>
+                <h3>Family Luxury Suite</h3>
+                <p>
+                  A spacious accommodation option designed for a family getaway.
+                </p>
+                <div class="room-details">
+                  <span>4 Guests</span>
+                  <span>Extra Space</span>
+                </div>
+                <div class="room-bottom">
+                  <p class="price">KSh 10,000 <small>/ night</small></p>
+                  <button
+                    class="btn btn-small book-room"
+                    data-room="Family Luxury Suite"
+                  >
+                    Enquire
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <p class="no-results" id="noResults" hidden>
+            No rooms match your search. Try another search.
+          </p>
+          <p class="demo-note">
+            Demonstration room names and prices only. Actual rates and
+            availability would need confirmation from the hotel.
+          </p>
+        </div>
+      </section>
+
+      <!-- Facilities -->
+      <section class="facilities section-padding" id="facilities">
+        <div class="container">
+          <div class="section-heading centered">
+            <p class="section-kicker">THE LUXURYSTAY EXPERIENCE</p>
+            <h2>Our Hotel <span>Facilities</span></h2>
+            <p>
+              Enjoy thoughtful amenities designed to make your visit more
+              comfortable.
+            </p>
+          </div>
+
+          <div class="facilities-grid">
+            <div class="facility-card">
+              <div class="facility-icon">✦</div>
+              <h3>Fine Dining</h3>
+              <p>
+                Enjoy a welcoming dining experience with a variety of meal
+                options.
+              </p>
+            </div>
+            <div class="facility-card">
+              <div class="facility-icon">⌁</div>
+              <h3>Swimming Pool</h3>
+              <p>
+                Relax and unwind in a peaceful swimming and leisure environment.
+              </p>
+            </div>
+            <div class="facility-card">
+              <div class="facility-icon">◈</div>
+              <h3>Free Wi-Fi</h3>
+              <p>
+                Stay connected during your visit with convenient internet
+                access.
+              </p>
+            </div>
+            <div class="facility-card">
+              <div class="facility-icon">✧</div>
+              <h3>Room Service</h3>
+              <p>Enjoy added convenience with attentive guest service.</p>
+            </div>
+            <div class="facility-card">
+              <div class="facility-icon">◇</div>
+              <h3>Secure Parking</h3>
+              <p>
+                Convenient parking arrangements for guests travelling by car.
+              </p>
+            </div>
+            <div class="facility-card">
+              <div class="facility-icon">⌂</div>
+              <h3>Conference Space</h3>
+              <p>
+                Flexible spaces for meetings, gatherings and business events.
+              </p>
+            </div>
+          </div>
+          <p class="demo-note">
+            Facilities shown are illustrative examples for this demonstration
+            website.
+          </p>
+        </div>
+      </section>
+
+      <!-- Booking enquiry -->
+      <section class="booking section-padding" id="booking">
+        <div class="container booking-grid">
+          <div class="booking-text">
+            <p class="section-kicker">PLAN YOUR STAY</p>
+            <h2>Make Your Stay <span>Special</span></h2>
+            <p>
+              Interested in staying with us? Complete the enquiry form and
+              prepare an email with your preferred room and travel dates.
+            </p>
+            <div class="booking-benefit">
+              <span>01</span>
+              <div>
+                <h3>Choose Your Room</h3>
+                <p>Select the room that matches your needs.</p>
+              </div>
+            </div>
+            <div class="booking-benefit">
+              <span>02</span>
+              <div>
+                <h3>Share Your Details</h3>
+                <p>Tell us your preferred dates and number of guests.</p>
+              </div>
+            </div>
+            <div class="booking-benefit">
+              <span>03</span>
+              <div>
+                <h3>Send Your Enquiry</h3>
+                <p>
+                  Your email application will open with the enquiry prepared.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <form class="booking-form" id="bookingForm">
+            <h3>Booking Enquiry</h3>
+            <p class="form-intro">
+              Complete the details below to prepare your enquiry.
+            </p>
+
+            <div class="form-group">
+              <label for="guestName">Full Name</label>
+              <input
+                type="text"
+                id="guestName"
+                name="guestName"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="guestEmail">Email Address</label>
+                <input
+                  type="email"
+                  id="guestEmail"
+                  name="guestEmail"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="guestPhone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="guestPhone"
+                  name="guestPhone"
+                  placeholder="Your phone number"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="roomChoice">Preferred Room</label>
+              <select id="roomChoice" name="roomChoice" required>
+                <option value="">Choose a room</option>
+                <option>Classic Comfort Room</option>
+                <option>Deluxe Elegance Room</option>
+                <option>Presidential Suite</option>
+                <option>Twin Sharing Room</option>
+                <option>Garden View Room</option>
+                <option>Family Luxury Suite</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="checkIn">Check-in Date</label>
+                <input type="date" id="checkIn" name="checkIn" required />
+              </div>
+              <div class="form-group">
+                <label for="checkOut">Check-out Date</label>
+                <input type="date" id="checkOut" name="checkOut" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="guests">Number of Guests</label>
+              <select id="guests" name="guests" required>
+                <option value="">Select guests</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6 or more</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Additional Message (Optional)</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Any special requests or questions?"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold form-submit">
+              Prepare Booking Enquiry
+            </button>
+            <p class="form-notice">
+              This is an enquiry only, not a confirmed reservation. Your email
+              app will open so you can review and send the message.
+            </p>
+            <p
+              id="formStatus"
+              class="form-status"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact section-padding" id="contact">
+        <div class="container">
+          <div class="section-heading centered">
+            <p class="section-kicker">GET IN TOUCH</p>
+            <h2>We Would Love to <span>Hear From You</span></h2>
+            <p>
+              Contact us with questions about rooms, services or your preferred
+              stay.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <div class="contact-icon">✉</div>
+              <h3>Email Us</h3>
+              <p>insightwebinar91@gmail.com</p>
+              <a href="mailto:insightwebinar91@gmail.com">Send an Email</a>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">⌖</div>
+              <h3>Our Location</h3>
+              <p>Location details to be added by the hotel owner.</p>
+              <span>Kenya</span>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">◷</div>
+              <h3>Guest Assistance</h3>
+              <p>Send us an enquiry and we will be happy to assist.</p>
+              <a href="#booking">Make an Enquiry</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to action -->
+      <section class="cta">
+        <div class="container cta-content">
+          <p class="section-kicker">YOUR COMFORT MATTERS</p>
+          <h2>Make Your Next Getaway Memorable</h2>
+          <a href="#booking" class="btn btn-gold">Send an Enquiry</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div>
+          <a href="#home" class="logo footer-logo">LUXURY<span>STAY</span></a>
+          <p>Comfort, elegance and hospitality in every stay.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#rooms">Rooms</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="currentYear"></span> LuxuryStay Hotel. Demonstration
+          website.
+        </p>
+        <p>Designed as a portfolio project.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
